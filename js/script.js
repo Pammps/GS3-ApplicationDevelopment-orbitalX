@@ -1,6 +1,4 @@
-// =====================
 // TEMA GLOBAL
-// =====================
 
 const themeBtn =
 document.getElementById("themeBtn");
@@ -40,9 +38,7 @@ if(themeBtn){
 
 }
 
-// =====================
 // FORMULÁRIO
-// =====================
 
 const form =
 document.getElementById("missionForm");
@@ -141,9 +137,7 @@ if(form){
 
 }
 
-// =====================
 // DASHBOARD
-// =====================
 
 const nomeMissaoDashboard =
 document.getElementById("nomeMissaoDashboard");
@@ -346,9 +340,7 @@ if(operacaoSalva){
 
 }
 
-// =====================
 // MONITORAMENTO
-// =====================
 
 // TEMPERATURA
 

@@ -14,7 +14,7 @@ O objetivo do projeto é representar uma central inteligente de monitoramento es
 
 A plataforma realiza simulações de:
 - temperatura;
-- radiação;
+- radiacao;
 - comunicação orbital;
 - energia;
 - combustível;
@@ -75,6 +75,6 @@ Projeto desenvolvido para a Global Solution, pela disciplina de Application Deve
 
 # 👨‍💻 Desenvolvedores
 
-Laís Krajner - RM563182
-Luana Magalhães - RM565305
-Pamella Souza – RM566172
+- Laís Krajner - RM563182
+- Luana Magalhães - RM565305
+- Pamella Souza – RM566172
