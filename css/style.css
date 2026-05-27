@@ -1,0 +1,324 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#071018;
+    color:#f1f5f9;
+    transition:0.4s;
+}
+
+/* TEMA CLARO */
+
+body.light-mode{
+    background:#edf2f7;
+    color:#111827;
+}
+
+/* HEADER */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 50px;
+    background:#0b1622;
+    border-bottom:1px solid #1e293b;
+}
+
+body.light-mode header{
+    background:white;
+}
+
+/* LOGO */
+
+.logo-area h1{
+    font-size:36px;
+    letter-spacing:4px;
+    color:#38bdf8;
+}
+
+.logo-area p{
+    margin-top:5px;
+    color:#94a3b8;
+}
+
+/* NAV */
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+body.light-mode nav a{
+    color:#111827;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* MAIN */
+
+main{
+    padding:40px;
+}
+
+/* PAINEL */
+
+.mission-panel{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.mission-info{
+    flex:1;
+    background:#0f1c2b;
+    padding:30px;
+    border-radius:16px;
+    box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+
+body.light-mode .mission-info{
+    background:white;
+}
+
+.mission-info h2{
+    margin-bottom:15px;
+}
+
+.mission-info h3{
+    font-size:28px;
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.mission-info p{
+    line-height:1.6;
+}
+
+/* STATUS */
+
+.status-box{
+    display:flex;
+    align-items:center;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.status-dot{
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    background:#22c55e;
+    margin-right:10px;
+}
+
+/* BOTÕES */
+
+button{
+    padding:14px 20px;
+    border:none;
+    border-radius:10px;
+    background:#38bdf8;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+    opacity:0.9;
+}
+
+/* DASHBOARD */
+
+.dashboard{
+    flex:2;
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.card{
+    width:220px;
+    background:#0f1c2b;
+    padding:25px;
+    border-radius:16px;
+    border:1px solid #1e293b;
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+}
+
+body.light-mode .card{
+    background:white;
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#38bdf8;
+}
+
+.card p{
+    font-size:28px;
+    font-weight:bold;
+}
+
+/* LOGS */
+
+.logs{
+    margin-top:40px;
+    background:#0f1c2b;
+    padding:30px;
+    border-radius:16px;
+}
+
+body.light-mode .logs{
+    background:white;
+}
+
+.logs h2{
+    margin-bottom:20px;
+}
+
+#logContainer p{
+    margin-top:12px;
+}
+
+/* ALERTAS */
+
+.alerts{
+    margin-top:30px;
+    background:#2b1111;
+    border:1px solid #7f1d1d;
+    padding:25px;
+    border-radius:16px;
+}
+
+body.light-mode .alerts{
+    background:#fee2e2;
+}
+
+/* FORMULÁRIO */
+
+.form-section{
+    max-width:700px;
+    margin:auto;
+    background:#0f1c2b;
+    padding:40px;
+    border-radius:16px;
+}
+
+body.light-mode .form-section{
+    background:white;
+}
+
+.form-section h2{
+    margin-bottom:30px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    margin-top:20px;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+input,
+select,
+textarea{
+    padding:14px;
+    border-radius:10px;
+    border:1px solid #334155;
+    background:#071018;
+    color:white;
+}
+
+body.light-mode input,
+body.light-mode select,
+body.light-mode textarea{
+    background:#f8fafc;
+    color:black;
+}
+
+textarea{
+    resize:none;
+    height:120px;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline:none;
+    border-color:#38bdf8;
+}
+
+/* RESULTADO */
+
+#missionResult{
+    margin-top:30px;
+    padding:25px;
+    border-radius:16px;
+    background:#071018;
+    line-height:1.7;
+}
+
+body.light-mode #missionResult{
+    background:#e2e8f0;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:40px;
+    text-align:center;
+    padding:25px;
+    background:#0b1622;
+}
+
+body.light-mode footer{
+    background:white;
+}
+
+/* RESPONSIVIDADE */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:20px;
+        padding:25px;
+    }
+
+    .mission-panel{
+        flex-direction:column;
+    }
+
+    .dashboard{
+        justify-content:center;
+    }
+
+    .card{
+        width:100%;
+    }
+
+    main{
+        padding:20px;
+    }
+
+}

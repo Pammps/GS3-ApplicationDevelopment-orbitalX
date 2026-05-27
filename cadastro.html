@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Nova Operação</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo-area">
+
+            <h1>ORBITAL X</h1>
+
+            <p>
+                Mission Control Center
+            </p>
+
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Dashboard
+            </a>
+
+            <a href="cadastro.html">
+                Nova Operação
+            </a>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="form-section">
+
+            <h2>
+                🚀 Nova Operação Científica
+            </h2>
+
+            <form id="missionForm">
+
+                <label>
+                    Nome da Operação
+                </label>
+
+                <input type="text"
+                       id="missionName"
+                       required>
+
+                <label>
+                    Ambiente Monitorado
+                </label>
+
+                <select id="destination">
+
+                    <option>Titã</option>
+
+                    <option>Marte</option>
+
+                    <option>Europa</option>
+
+                    <option>Lua</option>
+
+                </select>
+
+                <label>
+                    Tipo de Operação Científica
+                </label>
+
+                <select id="operationType">
+
+                    <option>
+                        Monitoramento Atmosférico
+                    </option>
+
+                    <option>
+                        Análise de Radiação
+                    </option>
+
+                    <option>
+                        Pesquisa Climática
+                    </option>
+
+                    <option>
+                        Comunicação Orbital
+                    </option>
+
+                </select>
+
+                <label>
+                    Prioridade Operacional
+                </label>
+
+                <select id="priority">
+
+                    <option>Baixa</option>
+
+                    <option>Média</option>
+
+                    <option>Alta</option>
+
+                    <option>Crítica</option>
+
+                </select>
+
+                <label>
+                    Quantidade de Tripulantes
+                </label>
+
+                <input type="number"
+                       id="crew">
+
+                <label>
+                    Descrição Operacional
+                </label>
+
+                <textarea id="description"></textarea>
+
+                <button type="submit">
+
+                    Iniciar Operação
+
+                </button>
+
+            </form>
+
+            <div id="missionResult"></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            © 2026 ORBITAL X
+        </p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
